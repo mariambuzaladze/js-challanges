@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM5</title>
+</head>
+<body>
+    <form>
+        <input type="text">
+        <button onclick="check()">Submit</button>
+        <p></p>
+    </form>
+    <script>
+        function check(){
+            event.preventDefault();
+            let form = document.querySelector("form");
+            let input = document.querySelector("input");
+            let newParagraph=document.querySelector("p");
+
+            if(input.value===""){
+               console.log("Error");
+               newParagraph.textContent="Error";
+            }else{
+               console.log("Form submitted!");
+               newParagraph.textContent="Form submitted!";
+            }
+
+        }
+    </script>
+</body>
+</html>

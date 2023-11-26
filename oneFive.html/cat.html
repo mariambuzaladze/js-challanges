@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crazy cat</title>
+</head>
+<body>
+    <h1>Crazy Black Cat</h1>
+    <p>this is black cat:</p>
+    <p><img id="blackCat" src="https://e7.pngegg.com/pngimages/416/811/png-clipart-black-cat-kitten-cartoon-black-cat-mammal-animals-thumbnail.png"></p>
+    <button onclick="goCrazy()">click to find out what happens</button>
+    
+    <script>
+        function goCrazy(){
+            const paragraph = document.getElementsByTagName('p')[0];
+            paragraph.textContent = "oh no, it's gone crazy";
+            const image = document.getElementById("blackCat");
+            image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsdNSGwbkqYs54bS1FXLlxsNEAS0r_vwFrTg&usqp=CAU";
+
+        }
+    </script>
+</body>
+</html>
